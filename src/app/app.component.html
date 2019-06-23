@@ -4,7 +4,19 @@
 
 
 
-  <div nz-row>
-    <div nz-col nzSpan="12"><app-slider ></app-slider></div>
-    <div nz-col nzSpan="12" style="margin-top: 20%; margin-bottom: 5%;"><app-description></app-description></div>
-  </div>
+  
+
+  <nz-layout>
+    <nz-header style="background: white" ></nz-header>
+    <nz-content style="background: rgb(185, 155, 155); padding: 5%;">
+
+        <div nz-row style="border-radius: 5px; box-shadow: 3px 0px 2px white; background: white">  
+            <div nz-col nzSpan="12" style="display:flex; align-items: center;justify-content: center" ><app-slider ></app-slider></div>
+            <div nz-col nzSpan="12" style="display:flex; align-items: center;justify-content: center" ><app-description></app-description></div>
+          </div>
+
+    </nz-content>
+    <nz-footer>
+
+    </nz-footer>
+  </nz-layout>

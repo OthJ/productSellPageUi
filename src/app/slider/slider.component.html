@@ -1,10 +1,12 @@
+<div>
+    <nz-carousel #map style="height:400px;width:400px;">
+        <img *ngFor="let link of links" nz-carousel-content  src='{{link}}'> 
+        <!-- <div *ngFor="let link of links" ng-carousel-content>
+         <h3> {{link}} </h3>
+        </div> -->
+     </nz-carousel>
+     <button  nz-button (click)="goNext()">next</button>
 
-<nz-carousel nzAutoPlay >
-   <img  *ngFor="let link of links" nz-carousel-content  src='{{link}}'> 
-   <!-- <div *ngFor="let link of links" ng-carousel-content>
-    <h3> {{link}} </h3>
-   </div> -->
-
-</nz-carousel>
+</div>
 
 
